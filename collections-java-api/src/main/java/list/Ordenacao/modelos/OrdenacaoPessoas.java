@@ -19,7 +19,6 @@ public class OrdenacaoPessoas {
         if (pessoas.isEmpty()) throw new RuntimeException("Lista vazia!");
         List<Pessoa> ordenar = new ArrayList<>(pessoas);
         Collections.sort(ordenar);
-        System.out.println(ordenar);
         return ordenar;
     }
 
@@ -27,7 +26,6 @@ public class OrdenacaoPessoas {
         if (pessoas.isEmpty()) throw new RuntimeException("Lista vazia!");
         List<Pessoa> ordenar = new ArrayList<>(pessoas);
         Collections.sort(ordenar, new ComparatorPorAltura());
-        System.out.println(ordenar);
         return ordenar;
     }
 
@@ -38,8 +36,9 @@ public class OrdenacaoPessoas {
         ordenacaoPessoas.adicionarPessoa("Eduardo", 25, 1.71);
         ordenacaoPessoas.adicionarPessoa("José", 60, 1.82);
         ordenacaoPessoas.adicionarPessoa("Enzo", 14, 1.90);
-        ordenacaoPessoas.ordenarPorIdade();
-        ordenacaoPessoas.ordenarPorAltura();
+        System.out.println(ordenacaoPessoas.ordenarPorIdade());
+        System.out.println(ordenacaoPessoas.ordenarPorAltura());
+
 
 
     }
