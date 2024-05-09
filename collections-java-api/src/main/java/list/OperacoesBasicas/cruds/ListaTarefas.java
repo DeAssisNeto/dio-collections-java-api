@@ -1,4 +1,6 @@
-package main.java.list.OperacoesBasicas;
+package main.java.list.OperacoesBasicas.cruds;
+
+import main.java.list.OperacoesBasicas.modelos.Tarefa;
 
 import java.util.ArrayList;
 import java.util.List;
