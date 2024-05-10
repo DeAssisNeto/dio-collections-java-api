@@ -1,6 +1,4 @@
-package main.java.list.Pesquisa.cruds;
-
-import main.java.list.Pesquisa.modelos.Livro;
+package main.java.list.Pesquisa;
 
 import java.util.ArrayList;
 import java.util.List;

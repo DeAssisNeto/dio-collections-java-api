@@ -1,6 +1,4 @@
-package main.java.list.OperacoesBasicas.cruds;
-
-import main.java.list.OperacoesBasicas.modelos.Item;
+package main.java.list.OperacoesBasicas;
 
 import java.util.ArrayList;
 import java.util.List;

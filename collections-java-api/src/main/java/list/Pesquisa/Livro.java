@@ -1,4 +1,4 @@
-package main.java.list.Pesquisa.modelos;
+package main.java.list.Pesquisa;
 
 public class Livro {
     private String titulo;
