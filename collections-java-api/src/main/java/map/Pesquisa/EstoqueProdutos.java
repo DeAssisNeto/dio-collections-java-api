@@ -61,7 +61,7 @@ public class EstoqueProdutos {
         }
         return produtoMaisCaro;
     }
-//    Retorna o produto que está em maior quantidade no estoque, considerando o valor total de cada produto (quantidade * preço).
+
     public static void main(String[] args) {
         EstoqueProdutos estoqueProdutos = new EstoqueProdutos();
 
