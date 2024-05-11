@@ -1,8 +1,7 @@
-package main.java.map.OperacoesBasicas.Pesquisa;
+package main.java.map.Pesquisa;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
 
 public class EstoqueProdutos {
     private Map<Long, Produto> produtos;
@@ -22,13 +21,13 @@ public class EstoqueProdutos {
     public double calcularValorTotalEstoque(){
         double valorTotal = 0;
         for (Produto produto: produtos.values()){
-            valorTotal += (produto.getQuantidade() * produto.getPreco());
+            valorTotal += produto.getQuantidade() * produto.getPreco();
         }
         return  valorTotal;
     }
 
     public Produto obterProdutoMaisCaro(){
-        double maisCaro = Integer.MIN_VALUE;
+        double maisCaro = Double.MIN_VALUE;
         Produto produtoMaisCaro = null;
         for (Produto produto: produtos.values()){
             if (produto.getPreco() > maisCaro) {
@@ -40,7 +39,7 @@ public class EstoqueProdutos {
     }
 
     public Produto obterProdutoMaisBarato(){
-        double maisBarato = Integer.MAX_VALUE;
+        double maisBarato = Double.MAX_VALUE;
         Produto produtoMaisBarato = null;
         for (Produto produto: produtos.values()){
             if (produto.getPreco() < maisBarato) {
@@ -52,11 +51,11 @@ public class EstoqueProdutos {
     }
 
     public Produto obterProdutoMaiorQuantidadeValorTotalNoEstoque(){
-        double maisCaro = Integer.MIN_VALUE;
+        double maisCaro = Double.MIN_VALUE;
         Produto produtoMaisCaro = null;
         for (Produto produto: produtos.values()){
             if ((produto.getPreco() * produto.getQuantidade()) > maisCaro) {
-                maisCaro = (produto.getPreco() * produto.getQuantidade());
+                maisCaro = produto.getPreco() * produto.getQuantidade();
                 produtoMaisCaro = produto;
             }
         }

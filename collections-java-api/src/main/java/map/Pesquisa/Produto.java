@@ -1,4 +1,4 @@
-package main.java.map.OperacoesBasicas.Pesquisa;
+package main.java.map.Pesquisa;
 
 public class Produto {
     private String nome;
