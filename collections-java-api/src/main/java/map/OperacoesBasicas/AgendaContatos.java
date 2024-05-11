@@ -31,9 +31,7 @@ public class AgendaContatos {
     }
 
     public Integer pesquisarPorNome(String nome){
-        Integer numeroContato = contatos.get(nome);
-        if (!contatos.isEmpty()) return numeroContato;
-        return numeroContato;
+        return  contatos.get(nome);
     }
 
     public static void main(String[] args) {
